@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- navbar -->
+        <div class="nav">
+            <div class="flex-container">
+                <h1 class="nav-title">Dojo Weather</h1>
+                <ul class="nav-links">
+                    <li><a href="#"class="active" onclick="city(this)">Bubank</a></li>
+                    <li><a href="#" class="active" onclick="city(this)">Chicago</a></li>
+                    <li><a href="#"class="active" onclick="city(this)">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Text-line">
+            <h1>San Jose</h1>
+            <p>show tempreture in</p>
+            <select onchange="myFunction()">
+                <option>Cْ </option>
+                <option>FHN</option>
+            </select>
+        </div>
+        <hr>
+        <div class="main-section">
+            <div class="block">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png">
+                <p>Some Rain</p>
+                <div class="degree">
+                    <h2 id = "e1" style="color:rgb(212, 18, 18)">24ْ </h2>
+                    <h2 id = "e2"style="color:rgb(11, 7, 245)">18ْ </h2>
+                </div>
+            </div>
+            <div class="block">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png">
+                <p>Some Sun</p>
+                <div class="degree">
+                    <h2 id = "e3" style="color:rgb(212, 18, 18)">27ْ </h2>
+                    <h2 id = "e4" style="color:rgb(11, 7, 245)">19ْ </h2>
+                </div>
+            </div>
+            <div class="block">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png">
+                <p>Some Clouds</p>
+                <div class="degree">
+                    <h2 id = "e5" style="color:rgb(212, 18, 18)">21ْ </h2>
+                    <h2 id = "e6" style="color:rgb(11, 7, 245)">16ْ </h2>
+                </div>
+            </div>
+            <div class="block">
+                <h1>Saterday</h1>
+                <img src="assets/some_sun.png">
+                <p>Some Sun</p>
+                <div class="degree">
+                    <h2 id = "e7" style="color:rgb(212, 18, 18)">26ْ </h2>
+                    <h2 id = "e8" style="color:rgb(11, 7, 245)">21ْ </h2>
+                </div>
+            </div>
+        </div>
+        <div id="cookies">
+            <div class="col-1">
+                <img src="assets/cookie.png">
+            </div>
+            <div class="col-2">
+                <h1>Stop! Cookies time</h1>
+                <p>We use cookies (Sadly not the idable ones) to personalize content and Ads,to provide social media features and to analyse our traffic,<a href="#">Read More...</a></p>
+            </div>
+            <div class="col-3">
+                <button class="btn" onclick="dismiss()">I Accept</button>
+            </div>
+            </div>
+        </div>
+    </body>
+<script src="script.js"></script>
+</html>
